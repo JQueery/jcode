@@ -1,0 +1,167 @@
+/* Jcode css */
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: 3px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #000;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: .7;
+    background: #000;
+    display: none;
+}
+
+#logo {
+    color: white;
+    left: 0;
+    position: fixed;
+    font-size: 34px;
+    padding: 25px;
+    background: transparent;
+}
+
+#menu {
+    background: transparent;
+    position: fixed;
+    top: 100px;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0px;
+    width: 135px;
+    text-align: center;
+}
+
+#menu ul li {
+    padding: 2em 0 2em 0;
+    font-size: 18px;
+}
+#menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu ul li a:hover{
+    color: #7dabe6;
+}
+
+#container {
+    background-image: linear-gradient(0deg,rgba(0, 153, 226, 0.3),rgba(50, 94, 101, 0.3)), url(../images/jcode-home.png);
+    background-size: cover;
+    float: right;
+    width: 85%;
+    border-bottom-left-radius: 50%;
+    box-shadow: -3px 3px 10px 0px #914cc5;
+}
+
+.vignette {
+    background-image: linear-gradient(0deg,rgb(0, 0, 0),rgba(50, 94, 101, 0.3)), url(../images/jcode-home.png) !important;
+}
+
+#panel-holder {
+    width: 75vw;
+    height: 95vh;
+    float: right;
+}
+
+#panel-holder td div {
+    margin: auto;
+    border-radius: 3%;
+}
+
+.panel {
+    width: 200px;
+    height: 100px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* text-shadow: 0px 3px 0 #70b0f3; */
+    font-size: 25px;
+    box-shadow: 0 0 44px 7px #ffffff59 !important;
+    border: 2px solid #7a1394 !important;
+}
+
+#about {
+    /*box-shadow: -10px -10px 10px 1px #5086b7ba;*/
+    box-shadow: -7px -7px 22px 0px #9e9e9eba;
+    border-left: 3px solid #7a1394;
+    border-top: 3px solid #7a1394;
+}
+
+#projects {
+    /* box-shadow: 10px -10px 10px 1px #5086b7ba */
+    box-shadow: 7px -7px 22px 0px #9e9e9eba;
+    border-right: 3px solid #7a1394;
+    border-top: 3px solid #7a1394;
+}
+
+#contact {
+    /* box-shadow: -10px 10px 10px 1px #5086b7ba; */
+    box-shadow: -7px 7px 22px 0px #9e9e9eba;
+    border-left: 3px solid #7a1394;
+    border-bottom: 3px solid #7a1394;
+}
+
+#resume {
+    /* box-shadow: 10px 10px 10px 1px #5086b7ba; */
+    box-shadow: 7px 7px 22px 0px #9e9e9eba;
+    border-right: 3px solid #7a1394;
+    border-bottom: 3px solid #7a1394;
+}
+
+.minimize {
+    color: #3e3e3e;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.shadow {
+    color: #3e3e3e;
+}
+
+.open-panel {
+    transform: rotateY(180deg) rotateX(180deg) scaleY(8) scaleX(4);
+    z-index: 1;
+    position: absolute;
+    top: 55%;
+    border: none !important;
+    left: 45%;
+    transition: all 1000ms ease-in-out 0ms;
+}
+
+
+.back-panel {
+    display:none;
+}
+
+#footer {
+    background: transparent;
+    width: 30%;
+    color: #dedede;
+    position: fixed;
+    bottom: 5%;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+/* background: #7d7e7d; Old browsers */
+/* background: -moz-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%); FF3.6-15 */
+/* background: -webkit-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); Chrome10-25,Safari5.1-6 */
+/* background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); IE6-9 */
